@@ -1,0 +1,5 @@
+c:\users\2015\documents\visual studio 2013\Projects\Manager\Quotes.entities\obj\Debug\Quotes.entities.csprojResolveAssemblyReference.cache
+c:\users\2015\documents\visual studio 2013\Projects\Manager\Quotes.entities\bin\Debug\Quotes.entities.dll
+c:\users\2015\documents\visual studio 2013\Projects\Manager\Quotes.entities\bin\Debug\Quotes.entities.pdb
+c:\users\2015\documents\visual studio 2013\Projects\Manager\Quotes.entities\obj\Debug\Quotes.entities.dll
+c:\users\2015\documents\visual studio 2013\Projects\Manager\Quotes.entities\obj\Debug\Quotes.entities.pdb

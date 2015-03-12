@@ -1,0 +1,23 @@
+﻿@model Quotes.Entities.Mood
+
+@{
+    ViewBag.Title = "Detail";
+}
+
+<h2>@Html.DisplayFor(model => model.moodDesc) Quotes</h2>
+<p>
+    @Html.ActionLink("Create New Quote", "Create", "Quote", new {quoteid = Model.moodID },null)
+</p>
+<table>
+    <tr>
+        <th>
+            Quote
+        </th>
+    </tr>
+    @foreach (var quote in Model.quotes)
+    {
+        <tr>
+            <td>@quote.quoteDesc</td>
+        </tr>
+    }
+</table>

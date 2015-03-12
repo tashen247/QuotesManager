@@ -1,0 +1,8 @@
+c:\users\2015\documents\visual studio 2013\Projects\Manager\Quote.Core\bin\Debug\Quote.Core.dll
+c:\users\2015\documents\visual studio 2013\Projects\Manager\Quote.Core\bin\Debug\Quote.Core.pdb
+c:\users\2015\documents\visual studio 2013\Projects\Manager\Quote.Core\bin\Debug\Microsoft.Web.WebPages.OAuth.dll
+c:\users\2015\documents\visual studio 2013\Projects\Manager\Quote.Core\bin\Debug\Twitterizer2.dll
+c:\users\2015\documents\visual studio 2013\Projects\Manager\Quote.Core\bin\Debug\Newtonsoft.Json.dll
+c:\users\2015\documents\visual studio 2013\Projects\Manager\Quote.Core\bin\Debug\Microsoft.Web.WebPages.OAuth.xml
+c:\users\2015\documents\visual studio 2013\Projects\Manager\Quote.Core\obj\Debug\Quote.Core.dll
+c:\users\2015\documents\visual studio 2013\Projects\Manager\Quote.Core\obj\Debug\Quote.Core.pdb

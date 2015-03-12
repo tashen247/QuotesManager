@@ -1,0 +1,56 @@
+﻿@model Quotes.Web.Models.CreateQuoteViewModel
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create Quote</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>CreateQuoteViewModel</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.quoteDesc)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.quoteDesc)
+            @Html.ValidationMessageFor(model => model.quoteDesc)
+        </div>
+
+
+        <div class="editor-label">
+            <label for="ProductType">Mood Type</label>
+            @Html.DropDownList("Mood Types", (SelectList)ViewBag.ListOfMoods)
+            @Html.ValidationMessageFor(model => model.moodID)
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.source)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.source)
+            @Html.ValidationMessageFor(model => model.source)
+        </div>
+        <div class="editor-label" style="visibility:hidden">
+            @Html.LabelFor(model => model.moodID)
+        </div>
+        <div class="editor-field" style="visibility:hidden">
+            @Html.EditorFor(model => model.moodID)
+            @Html.ValidationMessageFor(model => model.moodID)
+            <input type="submit" value="Create" />
+        </div>
+
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

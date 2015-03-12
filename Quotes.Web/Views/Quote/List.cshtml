@@ -1,0 +1,45 @@
+﻿@model IEnumerable<Quotes.Entities.Quote>
+
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>@Html.DisplayNameFor(model => model.modelDesc) Quote List</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.quoteDesc)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.moodID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.source)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.quoteDesc)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.moodID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.source)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.quoteID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.quoteID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.quoteID })
+        </td>
+    </tr>
+}
+
+</table>
